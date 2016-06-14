@@ -25,3 +25,5 @@ StrobeCatDancer.prototype.lineUp = function() {
   this.$node.toggleClass("blinkyLineUp");
 };
 
+
+

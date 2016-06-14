@@ -51,15 +51,24 @@ body, a:link, a:visited, a:active{
   background-color: blue;
 }
 
-.dancer.PizzaDancerLineUp {
+.PizzaDancerLineUp {
   top: 75px !important;
 }
-.dancer.colorBlinkLineUp {
+.colorBlinkLineUp {
   top: 400px !important;
-  /*transition: all .25s ease;*/
 }
-.dancer.blinkyLineUp {
+.blinkyLineUp {
   top: 600px !important;
+}
+
+.dancer:hover {
+  animation: 0.5s ease DANCER_FLIP infinite;
+}
+
+@keyframes DANCER_FLIP {
+  to{
+    transform: rotateX(180deg);
+  }
 }
 
 .catDancer {
@@ -84,5 +93,21 @@ body, a:link, a:visited, a:active{
   to {
     transform: rotateZ(180deg);
   }
+}
+
+.dancer.selected {
+  background-color: rgba(0,0,0,.5);
+}
+
+#center-dancer-0 {
+  top: 40vh !important;
+  left: 22vw !important;
+  transform: scale(1.5);
+}
+
+#center-dancer-1 {
+  top: 40vh !important;
+  left: 60vw !important;
+  transform: scale(1.5);
 }
 
