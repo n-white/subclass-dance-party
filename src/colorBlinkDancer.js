@@ -15,3 +15,6 @@ ColorBlinkDancer.prototype.step = function() {
     this.$node.toggleClass('dancer--blue');
 };
 
+ColorBlinkDancer.prototype.lineUp = function() {
+  this.$node.toggleClass("colorBlinkLineUp");
+};

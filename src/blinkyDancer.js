@@ -20,3 +20,7 @@ BlinkyDancer.prototype.step = function() {
     this.$node.toggle();
 };
 
+BlinkyDancer.prototype.lineUp = function() {
+  this.$node.toggleClass("blinkyLineUp");
+};
+

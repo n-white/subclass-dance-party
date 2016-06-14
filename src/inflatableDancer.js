@@ -14,13 +14,18 @@ InflatableDancer.prototype.step = function() {
     Dancer.prototype.step.call(this);
     
     this.$node.animate({
-      width: "+=100px",
-      height: "+=100px"
+      width: "50px",
+      height: "50px"
     }, 500);
 
-    this.$node.delay(550).animate({
-      width: "-=100px",
-      height: "-=100px"
-    }, 500);
+    this.$node.delay(600).animate({
+      width: "0px",
+      height: "0px"
+    }, 100);
+};
+
+
+InflatableDancer.prototype.lineUp = function() {
+  this.$node.toggleClass("inflatableDancerLineUp");
 };
 
