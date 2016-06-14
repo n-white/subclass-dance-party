@@ -24,7 +24,9 @@ body, a:link, a:visited, a:active{
 .pizzaParty {
   width: 300px;
   height: 300px;
-
+}
+.pizzaPartyRotate {
+  animation: .25s linear ROTATE infinite;
 }
 .pizzaPartyWrapper {
   width: 100vw;
@@ -36,6 +38,27 @@ body, a:link, a:visited, a:active{
   justify-content: center;
   align-items: center;
   z-index: -1;
+}
+.nyan-cat {
+  animation: 13s ease SLIDE infinite;
+  height: 200px;
+}
+
+.turtle {
+  position: fixed;
+  bottom: 0;
+  animation: 13s ease SLIDE reverse infinite;
+  height: 400px;
+}
+
+
+@keyframes SLIDE {
+  from{
+    transform: translateX(-2000px);
+  }
+  to{
+    transform: translateX(2000px);
+  }
 }
 
 .dancer{
@@ -83,10 +106,10 @@ body, a:link, a:visited, a:active{
   height: 200px;
   background-image: url("./images/pizza.gif");
   background-size: cover;
-  animation: .5s ease PIZZA_ROTATE infinite;
+  animation: .5s ease ROTATE infinite;
 }
 
-@keyframes PIZZA_ROTATE {
+@keyframes ROTATE {
   from {
     transform: rotateZ(0deg);
   }

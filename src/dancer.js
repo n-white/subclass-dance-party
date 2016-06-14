@@ -41,7 +41,14 @@ Dancer.prototype.clickInteraction = function () {
       window.interactingDancers.push($elem);
       window.interactingDancers.forEach(function(item, index) {
         item.attr('id', 'center-dancer-' + index);
+        $('.pizzaParty').addClass('pizzaPartyRotate');
         item.removeClass('selected');
+      });
+    } else if (window.interactingDancers.length === 2) {
+      window.interactingDancers.forEach(function(item, index) {
+        item.attr('id', '');
+        item.removeClass('selected');
+        $('.pizzaParty').removeClass('pizzaPartyRotate');        
       });
     }
   });

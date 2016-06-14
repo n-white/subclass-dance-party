@@ -1,5 +1,5 @@
 var makeStrobeCatDancer = function(top, left, timeBetweenSteps) {
-  return new StrobeCatDancer(top, left, timeBetweenSteps);
+  return new StrobeCatDancer(top, left, timeBetweenSteps + 500);
 };
 
 
