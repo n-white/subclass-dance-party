@@ -51,8 +51,8 @@ body, a:link, a:visited, a:active{
   background-color: blue;
 }
 
-.dancer.inflatableDancerLineUp {
-  top: 200px !important;
+.dancer.PizzaDancerLineUp {
+  top: 75px !important;
 }
 .dancer.colorBlinkLineUp {
   top: 400px !important;
@@ -62,9 +62,27 @@ body, a:link, a:visited, a:active{
   top: 600px !important;
 }
 
-.cat {
+.catDancer {
   width: 150px;
   height: 200px;
   background-image: url("./images/dancingkitty.gif");
   background-size: cover;
 }
+
+.pizzaDancer {
+  width: 200px;
+  height: 200px;
+  background-image: url("./images/pizza.gif");
+  background-size: cover;
+  animation: .5s ease PIZZA_ROTATE infinite;
+}
+
+@keyframes PIZZA_ROTATE {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+

@@ -5,7 +5,7 @@ var makeStrobeCatDancer = function(top, left, timeBetweenSteps) {
 
 var StrobeCatDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.$node.addClass('cat');
+  this.$node.addClass('catDancer');
 };
 
 
