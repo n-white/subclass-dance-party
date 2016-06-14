@@ -21,12 +21,30 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+.pizzaParty {
+  width: 300px;
+  height: 300px;
+
+}
+.pizzaPartyWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
 .dancer{
-  background: red;
-  border:10px solid red;
-  border-radius: 50%;
+  /*background: red;*/
+  /*border:10px solid red;*/
+  /*border-radius: 50%;*/
   position: absolute;
   transition: all .25s ease;
+  z-index: 100;
 }
 .dancer--blue {
   border: 10px solid blue;
@@ -42,4 +60,11 @@ body, a:link, a:visited, a:active{
 }
 .dancer.blinkyLineUp {
   top: 600px !important;
+}
+
+.cat {
+  width: 150px;
+  height: 200px;
+  background-image: url("./images/dancingkitty.gif");
+  background-size: cover;
 }
